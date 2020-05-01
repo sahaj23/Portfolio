@@ -74,7 +74,7 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
-.social-icons a {
+.fa {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
@@ -87,18 +87,6 @@ section.resume-section .resume-item .resume-date {
   margin-right: 1rem;
 }
 
-.social-icons a:last-child {
-  margin-right: 0;
-}
-
-.social-icons a:hover {
-  background-color: #bd5d38;
-}
-
-.dev-icons {
-  font-size: 3rem;
-}
-
-.dev-icons .list-inline-item i:hover {
-  color: #bd5d38;
+.fa:hover {
+  background-color: #0275d8;
 }
