@@ -1,1 +1,21 @@
-<p>certifications works!</p>
+<section
+  class="resume-section p-3 p-lg-5 d-flex align-items-center"
+  id="experience"
+>
+  <div class="w-100">
+    <h2 class="mb-5">Certifications</h2>
+
+    <div
+      *ngFor="let certification of certifications"
+      class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+    >
+      <div class="resume-content">
+        <h3 class="mb-0">{{ certification.certificate }}</h3>
+        <div class="subheading mb-3">
+          <a href="{{ certification.certificate_url }}">Link</a>
+        </div>
+        <p>{{ certification.about }}</p>
+      </div>
+    </div>
+  </div>
+</section>

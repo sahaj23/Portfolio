@@ -1,1 +1,20 @@
-<p>interests works!</p>
+<section
+  class="resume-section p-3 p-lg-5 d-flex align-items-center"
+  id="interests"
+>
+  <div class="w-100">
+    <h2 class="mb-5">Interests</h2>
+    <ul class="fa-ul">
+      <div
+        *ngFor="let interest of interests"
+        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+      >
+        <li>
+          <i class="fa-li fa fa-check-square"></i>
+
+          <h5>{{ interest.interest }}</h5>
+        </li>
+      </div>
+    </ul>
+  </div>
+</section>
