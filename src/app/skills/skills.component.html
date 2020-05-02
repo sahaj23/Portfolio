@@ -4,53 +4,23 @@
 >
   <div class="w-100">
     <h2 class="mb-5">Skills</h2>
+    <div
+      *ngFor="let skill of skills"
+      class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+    >
+      <div class="subheading mb-3">{{ skill.skill }}</div>
 
-    <div class="subheading mb-3">JAVA</div>
-    <div class="progress">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 90%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
-    <br />
-    <div class="subheading mb-3">Spring Boot</div>
-    <div class="progress">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 50%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
-    <br />
-    <div class="subheading mb-3">Web Development</div>
-    <div class="progress">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 80%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
-    </div>
-    <br />
-    <div class="subheading mb-3">SQL</div>
-    <div class="progress">
-      <div
-        class="progress-bar"
-        role="progressbar"
-        style="width: 70%;"
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100"
-      ></div>
+      <div class="progress">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          [style.width.%]="skill.rate * 10"
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <br />
     </div>
   </div>
 </section>

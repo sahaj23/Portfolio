@@ -1,0 +1,18 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="experience">
+    <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div *ngFor="let exp of experiences" class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">{{exp.role }}</h3>
+            <div class="subheading mb-3"><a href="{{ exp.company_url }}">{{ exp.company }}</a></div>
+            <p> {{ exp.about }}</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">{{ exp.joining_date }} - {{ exp.to_date }} </span>
+          </div>
+        </div>
+    </div>
+</section>
+
+
